@@ -6,14 +6,14 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
-import com.ruoyi.project.system.domain.SysRole;
-import com.ruoyi.project.system.domain.SysUser;
-import com.ruoyi.project.system.service.ISysMenuService;
-import com.ruoyi.project.system.service.ISysRoleService;
+import com.ruoyi.modules.system.domain.SysRole;
+import com.ruoyi.modules.system.domain.SysUser;
+import com.ruoyi.modules.system.service.ISysMenuService;
+import com.ruoyi.modules.system.service.ISysRoleService;
 
 /**
  * 用户权限处理
- * 
+ *
  * @author ruoyi
  */
 @Component
@@ -27,7 +27,7 @@ public class SysPermissionService
 
     /**
      * 获取角色数据权限
-     * 
+     *
      * @param user 用户信息
      * @return 角色权限信息
      */
@@ -48,7 +48,7 @@ public class SysPermissionService
 
     /**
      * 获取菜单数据权限
-     * 
+     *
      * @param user 用户信息
      * @return 菜单权限信息
      */

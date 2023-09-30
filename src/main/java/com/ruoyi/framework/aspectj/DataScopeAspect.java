@@ -13,8 +13,8 @@ import com.ruoyi.framework.aspectj.lang.annotation.DataScope;
 import com.ruoyi.framework.security.LoginUser;
 import com.ruoyi.framework.security.context.PermissionContextHolder;
 import com.ruoyi.framework.web.domain.BaseEntity;
-import com.ruoyi.project.system.domain.SysRole;
-import com.ruoyi.project.system.domain.SysUser;
+import com.ruoyi.modules.system.domain.SysRole;
+import com.ruoyi.modules.system.domain.SysUser;
 
 /**
  * 数据过滤处理

@@ -11,8 +11,8 @@ import com.ruoyi.common.exception.ServiceException;
 import com.ruoyi.common.utils.MessageUtils;
 import com.ruoyi.common.utils.StringUtils;
 import com.ruoyi.framework.security.LoginUser;
-import com.ruoyi.project.system.domain.SysUser;
-import com.ruoyi.project.system.service.ISysUserService;
+import com.ruoyi.modules.system.domain.SysUser;
+import com.ruoyi.modules.system.service.ISysUserService;
 
 /**
  * 用户验证处理
@@ -26,7 +26,7 @@ public class UserDetailsServiceImpl implements UserDetailsService
 
     @Autowired
     private ISysUserService userService;
-    
+
     @Autowired
     private SysPasswordService passwordService;
 

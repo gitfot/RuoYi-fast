@@ -12,9 +12,9 @@ import com.ruoyi.common.utils.ExceptionUtil;
 import com.ruoyi.common.utils.StringUtils;
 import com.ruoyi.common.utils.bean.BeanUtils;
 import com.ruoyi.common.utils.spring.SpringUtils;
-import com.ruoyi.project.monitor.domain.SysJob;
-import com.ruoyi.project.monitor.domain.SysJobLog;
-import com.ruoyi.project.monitor.service.ISysJobLogService;
+import com.ruoyi.modules.monitor.domain.SysJob;
+import com.ruoyi.modules.monitor.domain.SysJobLog;
+import com.ruoyi.modules.monitor.service.ISysJobLogService;
 
 /**
  * 抽象quartz调用

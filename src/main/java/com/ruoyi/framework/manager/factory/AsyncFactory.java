@@ -10,15 +10,15 @@ import com.ruoyi.common.utils.StringUtils;
 import com.ruoyi.common.utils.ip.AddressUtils;
 import com.ruoyi.common.utils.ip.IpUtils;
 import com.ruoyi.common.utils.spring.SpringUtils;
-import com.ruoyi.project.monitor.domain.SysLogininfor;
-import com.ruoyi.project.monitor.domain.SysOperLog;
-import com.ruoyi.project.monitor.service.ISysLogininforService;
-import com.ruoyi.project.monitor.service.ISysOperLogService;
+import com.ruoyi.modules.monitor.domain.SysLogininfor;
+import com.ruoyi.modules.monitor.domain.SysOperLog;
+import com.ruoyi.modules.monitor.service.ISysLogininforService;
+import com.ruoyi.modules.monitor.service.ISysOperLogService;
 import eu.bitwalker.useragentutils.UserAgent;
 
 /**
  * 异步工厂（产生任务用）
- * 
+ *
  * @author ruoyi
  */
 public class AsyncFactory
@@ -27,7 +27,7 @@ public class AsyncFactory
 
     /**
      * 记录登录信息
-     * 
+     *
      * @param username 用户名
      * @param status 状态
      * @param message 消息
@@ -82,7 +82,7 @@ public class AsyncFactory
 
     /**
      * 操作日志记录
-     * 
+     *
      * @param operLog 操作日志信息
      * @return 任务task
      */

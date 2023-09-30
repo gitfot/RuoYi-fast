@@ -16,11 +16,11 @@ import com.ruoyi.common.exception.job.TaskException;
 import com.ruoyi.common.exception.job.TaskException.Code;
 import com.ruoyi.common.utils.StringUtils;
 import com.ruoyi.common.utils.spring.SpringUtils;
-import com.ruoyi.project.monitor.domain.SysJob;
+import com.ruoyi.modules.monitor.domain.SysJob;
 
 /**
  * 定时任务工具类
- * 
+ *
  * @author ruoyi
  *
  */
@@ -121,7 +121,7 @@ public class ScheduleUtils
 
     /**
      * 检查包名是否为白名单配置
-     * 
+     *
      * @param invokeTarget 目标字符串
      * @return 结果
      */

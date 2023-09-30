@@ -25,13 +25,13 @@ import com.ruoyi.framework.manager.factory.AsyncFactory;
 import com.ruoyi.framework.redis.RedisCache;
 import com.ruoyi.framework.security.LoginUser;
 import com.ruoyi.framework.security.context.AuthenticationContextHolder;
-import com.ruoyi.project.system.domain.SysUser;
-import com.ruoyi.project.system.service.ISysConfigService;
-import com.ruoyi.project.system.service.ISysUserService;
+import com.ruoyi.modules.system.domain.SysUser;
+import com.ruoyi.modules.system.service.ISysConfigService;
+import com.ruoyi.modules.system.service.ISysUserService;
 
 /**
  * 登录校验方法
- * 
+ *
  * @author ruoyi
  */
 @Component
@@ -54,7 +54,7 @@ public class SysLoginService
 
     /**
      * 登录验证
-     * 
+     *
      * @param username 用户名
      * @param password 密码
      * @param code 验证码
@@ -102,7 +102,7 @@ public class SysLoginService
 
     /**
      * 校验验证码
-     * 
+     *
      * @param username 用户名
      * @param code 验证码
      * @param uuid 唯一标识
