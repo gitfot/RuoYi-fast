@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.modules.chat.mapper.ApiKeyMapper">
+    <select id="selectApiKeyPage" resultType="com.ruoyi.modules.chat.vo.ApiKeyVO">
+        SELECT *
+        FROM chat_api_key
+        WHERE 1=1
+    </select>
+</mapper>

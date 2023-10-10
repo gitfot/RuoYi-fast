@@ -34,10 +34,10 @@ server:
       min-spare: 100
 
 # 日志配置
-logging:
-  level:
-    com.ruoyi: debug
-    org.springframework: warn
+#logging:
+#  level:
+#    com.ruoyi: debug
+#    org.springframework: warn
 
 # 用户配置
 user:
@@ -78,14 +78,12 @@ token:
   # 令牌有效期（默认30分钟）
   expireTime: 30
 
-# MyBatis配置
-mybatis:
-  # 搜索指定包别名
-  typeAliasesPackage: com.ruoyi.modules.**.domain
-  # 配置mapper的扫描，找到所有的mapper.xml映射文件
-  mapperLocations: classpath*:mybatis/**/*Mapper.xml
-  # 加载全局的配置文件
-  configLocation: classpath:mybatis/mybatis-config.xml
+# Sql日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    cache-enabled: false # 关闭二级缓存
+    local-cache-scope: SESSION # 设置本地缓存作用域
 
 # PageHelper分页插件
 pagehelper:

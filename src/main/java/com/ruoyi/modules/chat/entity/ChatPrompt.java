@@ -1,8 +1,6 @@
 package com.ruoyi.modules.chat.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import io.swagger.annotations.ApiModel;
@@ -32,6 +30,7 @@ public class ChatPrompt {
     private Long id;
 
     @ApiModelProperty(value = "创建日期")
+    @TableField(fill = FieldFill.INSERT)
     private Date createTime;
 
     @ApiModelProperty(value = "标题")
@@ -41,14 +40,15 @@ public class ChatPrompt {
     private String content;
 
     @ApiModelProperty(value = "描述")
-    private String describe;
+    private String des;
 
     @ApiModelProperty(value = "标签")
     private String tag;
 
     @ApiModelProperty(value = "创建者")
+    @TableField(fill = FieldFill.INSERT)
     private String createBy;
 
-    @ApiModelProperty(value = "是否用户自建")
-    private Object isUser;
+    @ApiModelProperty(value = "是否用户自建 1是")
+    private Integer isUser = 1;
 }
