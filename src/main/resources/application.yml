@@ -75,8 +75,8 @@ token:
   header: Authorization
   # 令牌密钥
   secret: abcdefghijklmnopqrstuvwxyz
-  # 令牌有效期（默认30分钟）
-  expireTime: 30
+  # 令牌有效期（分钟，当前为30天）
+  expireTime: 43200
 
 # Sql日志
 mybatis-plus:

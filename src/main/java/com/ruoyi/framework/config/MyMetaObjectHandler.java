@@ -19,7 +19,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
         Long userId = SecurityUtils.getUserId();
-        this.strictInsertFill(metaObject, "createdBy", Long.class, userId);
+        this.strictInsertFill(metaObject, "createBy", Long.class, userId);
         this.strictInsertFill(metaObject, "createTime", Date.class, new Date());
     }
 
